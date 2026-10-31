@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { X, CheckCircle2, ArrowRight, User, Phone, Mail, Building, FileText, Lock } from 'lucide-react';
+import { X, CheckCircle2, ArrowRight, User, Phone, Mail, Lock } from 'lucide-react';
 
-export default function QuoteModal({ isOpen, onClose }) {
+export default function QuoteModal({ isOpen, onClose, initialService = 'Website Development' }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
-    service: 'Website Development',
+    service: initialService,
     budget: '',
     details: '',
   });

@@ -1,9 +1,11 @@
 import React from 'react';
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import Logo from './Logo';
 import { FacebookIcon, LinkedinIcon, InstagramIcon, YoutubeIcon } from './SocialIcons';
 
-export default function Footer({ onNavigate, onOpenQuote }) {
+const CURRENT_YEAR = new Date().getFullYear();
+
+export default function Footer({ onNavigate }) {
   const quickLinks = [
     { id: 'home', label: 'Home' },
     { id: 'services', label: 'Services' },
@@ -20,7 +22,7 @@ export default function Footer({ onNavigate, onOpenQuote }) {
   ];
 
   return (
-    <footer className="bg-brand-navy text-slate-300 pt-16 pb-8 border-t border-slate-800">
+    <footer id="contact" className="bg-brand-navy text-slate-300 pt-16 pb-8 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-slate-800">
           {/* Col 1: Brand & Bio */}
@@ -137,26 +139,13 @@ export default function Footer({ onNavigate, onOpenQuote }) {
                 <span>Hyderabad, Telangana, India</span>
               </li>
             </ul>
-
-            {/* WhatsApp Direct Action Button */}
-            <div className="pt-2">
-              <a
-                href="https://wa.me/919876543210?text=Hi%20Udyvexa,%20I%20am%20interested%20in%20your%20services"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white text-sm font-semibold shadow-md transition-transform hover:scale-105 active:scale-95"
-              >
-                <MessageCircle className="w-4 h-4 fill-white" />
-                <span>Chat on WhatsApp</span>
-              </a>
-            </div>
           </div>
         </div>
 
         {/* Subfooter */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
-            © {new Date().getFullYear()} Udyvexa Software & Digital Technologies Pvt. Ltd. All rights reserved.
+            © {CURRENT_YEAR} Udyvexa Software & Digital Technologies Pvt. Ltd. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <button
