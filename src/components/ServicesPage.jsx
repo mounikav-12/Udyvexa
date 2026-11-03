@@ -46,8 +46,6 @@ function SR({ children, delay = 0, className = '' }) {
 const SERVICES_DATA = [
   {
     id: 'website-development',
-    indexNum: '01',
-    category: 'Web Architecture',
     badge: 'Lightning Fast',
     icon: Monitor,
     iconColor: 'text-[#0284c7]',
@@ -67,12 +65,9 @@ const SERVICES_DATA = [
       'Ongoing 24/7 Cloud Support',
     ],
     serviceValue: 'Website Development',
-    trustNote: '⚡ 3-5 Days Turnaround Estimate',
   },
   {
     id: 'digital-marketing',
-    indexNum: '02',
-    category: 'Growth Engine',
     badge: 'ROI Focused',
     icon: Megaphone,
     iconColor: 'text-rose-600',
@@ -92,12 +87,9 @@ const SERVICES_DATA = [
       'Online Reviews & Reputation',
     ],
     serviceValue: 'Digital Marketing',
-    trustNote: '📈 Guaranteed Inquiries Strategy',
   },
   {
     id: 'software-development',
-    indexNum: '03',
-    category: 'Enterprise Core',
     badge: 'Cloud Native',
     icon: Code2,
     iconColor: 'text-[#4f75d9]',
@@ -117,12 +109,9 @@ const SERVICES_DATA = [
       'Secure REST & GraphQL APIs',
     ],
     serviceValue: 'Software Development',
-    trustNote: '🔒 Enterprise Architecture & Security',
   },
   {
     id: 'education-consultancy',
-    indexNum: '04',
-    category: 'EdTech CRM',
     badge: 'Automated Pipeline',
     icon: GraduationCap,
     iconColor: 'text-emerald-600',
@@ -142,7 +131,6 @@ const SERVICES_DATA = [
       'Targeted Admissions Marketing',
     ],
     serviceValue: 'Education Consultancy Solutions',
-    trustNote: '🎓 Complete Portal Demo Available',
   },
 ];
 
@@ -226,12 +214,9 @@ export default function ServicesPage({ onOpenQuote }) {
                             </div>
                           </div>
                           <div>
-                            <span className="text-[10px] font-mono font-bold tracking-widest uppercase text-slate-400">
-                              {service.indexNum} / {service.category}
-                            </span>
                             <h2 className="text-xl sm:text-2xl font-black text-[#072635] tracking-tight group-hover:text-[#0284c7] transition-colors leading-tight">
-                              {service.title}
-                            </h2>
+                            {service.title}
+                          </h2>
                           </div>
                         </div>
 
@@ -264,15 +249,10 @@ export default function ServicesPage({ onOpenQuote }) {
                     </div>
 
                     {/* Bottom Action Bar: Trust Highlight + Get Started */}
-                    <div className="pt-4 border-t border-[#edf4f7] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 relative z-10">
-                      <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
-                        <span>{service.trustNote}</span>
-                      </div>
-
+                    <div className="pt-4 border-t border-[#edf4f7] flex items-center justify-end relative z-10">
                       <button
                         onClick={() => onOpenQuote(service.serviceValue)}
-                        className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#1fa7c6] via-[#4f75d9] to-[#8274ff] hover:opacity-95 active:scale-95 text-white font-semibold text-xs sm:text-sm shadow-md shadow-cyan-500/20 transition-all duration-200 group-hover:shadow-cyan-500/35 group-hover:shadow-lg self-end sm:self-auto"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-[#1fa7c6] via-[#4f75d9] to-[#8274ff] hover:opacity-95 active:scale-95 text-white font-semibold text-xs sm:text-sm shadow-md shadow-cyan-500/20 transition-all duration-200 group-hover:shadow-cyan-500/35 group-hover:shadow-lg"
                       >
                         <span>Get Started</span>
                         <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
