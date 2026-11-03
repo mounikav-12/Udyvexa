@@ -168,9 +168,9 @@ export default function ServicesPage({ onOpenQuote }) {
       <section className="relative overflow-hidden pt-12 pb-14 sm:pt-16 sm:pb-18 lg:pt-20 lg:pb-20 bg-gradient-to-b from-[#f0f6f8] via-[#f4f9fb] to-[#e6eff3] border-b border-[#d2e5ed]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
           <SR>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#072635] tracking-tight leading-tight mb-5">
-              Simple Technology <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-[#4f75d9] to-[#8274ff]">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#072635] tracking-normal leading-snug sm:leading-[1.32] mb-5">
+              <span className="block">Simple Technology</span>
+              <span className="block mt-1 sm:mt-1.5 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-[#4f75d9] to-[#8274ff]">
                 Solutions for Real Businesses
               </span>
             </h1>

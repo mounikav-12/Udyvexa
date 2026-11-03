@@ -301,10 +301,10 @@ export default function HeroSection({ onOpenQuote, onExploreServices }) {
             
             {/* Headline */}
             <div className="hero-anim-1">
-              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-[#072635] tracking-normal leading-[1.24]">
-                Your Business <br />
-                Our Technology <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0284c7] via-[#4f75d9] to-[#8274ff]">
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-[#072635] tracking-normal leading-snug sm:leading-[1.32]">
+                <span className="block">Your Business</span>
+                <span className="block mt-1 sm:mt-1.5">Our Technology</span>
+                <span className="block mt-1 sm:mt-1.5 text-transparent bg-clip-text bg-gradient-to-r from-[#0284c7] via-[#4f75d9] to-[#8274ff]">
                   Greater Growth
                 </span>
               </h1>
