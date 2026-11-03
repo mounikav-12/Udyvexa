@@ -75,7 +75,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-800 font-sans selection:bg-brand-500 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#f0f6f8] text-slate-800 font-sans selection:bg-[#1fa7c6] selection:text-white">
       {/* Main Header / Navigation */}
       <Navbar
         activePage={activePage}
@@ -104,14 +104,16 @@ export default function App() {
 
         {/* Privacy Policy Preview */}
         {activePage === 'policy' && (
-          <div className="py-12 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto prose prose-slate">
-            <h1 className="text-3xl font-extrabold text-slate-900 mb-4">Privacy Policy & Terms</h1>
-            <p className="text-sm text-slate-600 leading-relaxed mb-4">
-              At Udyvexa Software & Digital Technologies Pvt. Ltd., we are committed to safeguarding the privacy of our visitors and clients. Any information submitted through our forms (including your name, phone number, and email address) is kept strictly confidential and used solely to communicate regarding requested services.
-            </p>
-            <p className="text-sm text-slate-600 leading-relaxed">
-              We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties. For queries regarding our policies, please email info@udyvexa.com.
-            </p>
+          <div className="py-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+            <div className="bg-white rounded-3xl border border-[#d2e5ed] p-8 sm:p-10 shadow-lg">
+              <h1 className="text-3xl font-extrabold text-[#072635] mb-4">Privacy Policy &amp; Terms</h1>
+              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                At Udyvexa Software &amp; Digital Technologies Pvt. Ltd., we are committed to safeguarding the privacy of our visitors and clients. Any information submitted through our forms (including your name, phone number, and email address) is kept strictly confidential and used solely to communicate regarding requested services.
+              </p>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties. For queries regarding our policies, please email <a href="mailto:info@udyvexa.com" className="text-[#0284c7] hover:underline font-medium">info@udyvexa.com</a>.
+              </p>
+            </div>
           </div>
         )}
       </main>

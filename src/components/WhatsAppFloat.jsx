@@ -7,16 +7,16 @@ export default function WhatsAppFloat() {
   return (
     <div className="fixed bottom-6 right-6 z-40 flex items-end flex-col gap-2">
       {showTooltip && (
-        <div className="relative bg-white text-slate-800 text-xs py-2 px-3.5 rounded-xl shadow-lg border border-slate-100 flex items-center gap-2 animate-bounce duration-1000">
+        <div className="relative bg-white text-slate-800 text-xs py-2 px-3.5 rounded-xl shadow-2xl border border-[#d2e5ed] flex items-center gap-2 animate-bounce duration-1000">
           <span>👋 Have a question? Chat with our team!</span>
           <button
             onClick={() => setShowTooltip(false)}
-            className="text-slate-400 hover:text-slate-600 focus:outline-none"
+            className="text-slate-400 hover:text-slate-700 focus:outline-none"
             aria-label="Dismiss message"
           >
             <X className="w-3.5 h-3.5" />
           </button>
-          <div className="absolute -bottom-1.5 right-5 w-3 h-3 bg-white border-b border-r border-slate-100 rotate-45"></div>
+          <div className="absolute -bottom-1.5 right-5 w-3 h-3 bg-white border-b border-r border-[#d2e5ed] rotate-45"></div>
         </div>
       )}
 
