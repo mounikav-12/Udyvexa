@@ -179,7 +179,7 @@ export default function AboutUsPage({ onOpenQuote }) {
               <div className="bg-white border border-[#d2e5ed] rounded-2xl p-7 sm:p-9 h-full flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
                 {/* Top Header: Highlighted Title & Rocket SVG */}
                 <div className="flex items-center justify-between pb-4 border-b border-slate-100">
-                  <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight">
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#072635] tracking-tight">
                     Our Mission
                   </h3>
                   <div className="w-10 h-10 rounded-xl bg-cyan-50 border border-cyan-100 flex items-center justify-center text-[#0284c7] shadow-xs shrink-0">
