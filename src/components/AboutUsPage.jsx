@@ -76,7 +76,7 @@ export default function AboutUsPage({ onOpenQuote }) {
             <div className="lg:col-span-6 flex flex-col justify-center">
 
               <SR>
-                <h1 className="text-[#072635] text-3xl sm:text-4xl lg:text-[44px] font-extrabold leading-[1.15] tracking-tight mb-5">
+                <h1 className="text-[#072635] text-3xl sm:text-4xl lg:text-[44px] font-extrabold leading-snug sm:leading-[1.35] tracking-normal mb-5">
                   Empowering Businesses Through Honest,{' '}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0284c7] via-[#4f75d9] to-[#8274ff]">Human Technology.</span>
                 </h1>
